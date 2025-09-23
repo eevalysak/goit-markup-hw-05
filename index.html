@@ -510,5 +510,79 @@
 
     </footer>
 
+    <div class="modal-overlay">
+        <div class="modal">
+
+            <button class="close-button" type="button">
+                <svg class="close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="form-label">
+                Leave your contacts and we will call you back
+            </p>
+        </div>
+
+
+            <form class="form">
+                
+                <div class="form-box">
+                <label class="input-label">
+                     Name
+                     <div class="input-items">
+                    <input class="form-input" type="text" name="name" id="user-name"/>
+                    <svg class="form-icon" width="12" height="12">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                    </div>
+                </label>
+                </div>
+
+                <div class="form-box">
+
+                <label class="input-label">
+                    Phone
+                    <div class="input-items">
+                    <input class="form-input" type="tel" name="phone" id="user-phone"/>
+                    <svg class="form-icon" width="13" height="13">
+                        <use href="./images/icons.svg#icon-tel"></use>
+                    </svg>
+                    </div>
+                </label>
+                </div>
+
+                <div class="form-box">
+
+                <label class="input-label">
+                    Email
+                    <div class="input-items">
+                    <input class="form-input" type="email" name="email" />
+                    <svg class="form-icon" width="15" height="12">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    </div>
+                </label>
+                </div>
+
+                 <div class="form-box">
+                <label class="input-label">
+                    Comment
+                    <textarea class="form-input big-textform" name="comment" rows="5" placeholder="Text input"></textarea>   
+                </label>
+                </div>
+
+                <div class="checkbox-label">
+                <input class="checkbox" type="checkbox" name="checkbox"
+                id="user-agreement" value="agree"/>
+                <p class="form-text">I accept the terms and conditions of the <span class="form-link">privacy policy</span></p>
+                </div>
+                
+
+                <button class="submit-button" type="submit">Send</button>
+               
+            </form>
+        </div>
+    </div>
+
 </body>
 </html>
