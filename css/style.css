@@ -700,8 +700,10 @@ footer::placeholder {
 
 .close-button:hover,
 .close-button:focus {
-    background-color: #404bbf;
-    border: none;
+background-color: #404bbf;
+border: none;
+fill: #ffffff;
+
 }
 
 .close-icon {
@@ -735,8 +737,9 @@ footer::placeholder {
 
         .form-input {
         border: 1px solid #2E2F4266;
-        background-color: #FCFCFC;
+        background-color: transparent;
             border-radius: 4px;
+            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             width: 360px;
             min-height: 40px;
             margin-top: 4px;
@@ -746,7 +749,6 @@ footer::placeholder {
             resize: none;
         }
     
-        
         .form-input:focus,
         .form-input:hover{
             border: 2px solid #4D5AE5;
@@ -775,21 +777,41 @@ footer::placeholder {
         left: 16px;
         top: 50%;
         transform: translateY(-50%);
-        
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-.big-textform {
+        .textform-four {
+            margin-bottom: 16px;
+        }
+
+
+.form-textarea {
     width: 360px;
     height: 120px; 
-    padding-top:8px;
-    padding-left: 16px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);     
 }
+
+.form-textarea:focus {
+border-color: #4D5AE5;
+}
+
 
 .checkbox-label {
 border-radius: 4px;
 width: 360px;
 height: 16px;
+margin-bottom: 24px;
+
 }
 
 .checkbox {
@@ -806,13 +828,35 @@ width: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.checkbox-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
 
+.checkbox-custom {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .privacy-link {
     text-decoration: underline;
-    color: #404bbf;
+    color: #4d5ae5;
+    
+
 }
 
 .checkbox-mark {
