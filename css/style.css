@@ -840,14 +840,13 @@ width: 16px;
 .checkbox-custom {
     width: 16px;
     height: 16px;
-border: 1px solid rgba(46, 47, 66, 0.4);
+border: 1px solid #404BBF;
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    background-color: #404bbf;
     border: none;
     fill: transparent;
 }
@@ -859,13 +858,22 @@ border: 1px solid rgba(46, 47, 66, 0.4);
 
 }
 
+:root {
+    --checkbox-checked-color: #F4F4FD;
+}
+
 .checkbox-mark {
-    fill: #F4F4FD;
+    fill: transparent;
+    transition: fill 0.03s;
     border: 1px solid #404BBF;
     border-radius: 2px;
     background-color: #404BBF;
     width: 16px;
     height: 16px;
+}
+
+.checkbox:checked+.checkbox-text .checkbox-mark {
+    fill: var(--checkbox-checked-color);
 }
 
 .form-text {
