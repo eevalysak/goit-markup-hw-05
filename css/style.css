@@ -854,12 +854,18 @@ width: 16px;
 .privacy-link {
     text-decoration: underline;
     color: #4d5ae5;
-
-
 }
 
 :root {
     --checkbox-checked-color: #F4F4FD;
+}
+
+.checkbox:checked + .checkbox-text .checkbox-custom {
+    border-radius: 2px;
+    background-color: #404BBF;
+    fill: #F4F4FD;
+    border: 1px solid #404bbf;
+    border: none;
 }
 
 
